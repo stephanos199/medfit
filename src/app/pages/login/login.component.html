@@ -4,10 +4,10 @@
     [formGroup]="loginForm" 
     class="form"
     (submit)="logIn(loginForm)">
-    <label>Usuario: </label>
-    <input type="email" name="email">
-    <label>Contraseña: </label>
-    <input type="password" name="password">
+    <label>Usuario:</label>
+    <input type="email" formControlName="email">
+    <label>Contraseña:</label>
+    <input type="password" formControlName="password">
     <button type="submit">Iniciar Sesión</button>
   </form>
 </div>
