@@ -1,0 +1,13 @@
+<div class="container">
+  <form 
+    novalidate 
+    [formGroup]="loginForm" 
+    class="form"
+    (submit)="logIn(loginForm)">
+    <label>Usuario: </label>
+    <input type="email" name="email">
+    <label>Contraseña: </label>
+    <input type="password" name="password">
+    <button type="submit">Iniciar Sesión</button>
+  </form>
+</div>
